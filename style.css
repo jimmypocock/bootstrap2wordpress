@@ -1048,6 +1048,9 @@ a.text-danger:hover {
 /* === NAVBAR === */
 .navbar {
   height: 52px;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 0;
 }
 
 /* === CUSTOM ICON SPRITES === */

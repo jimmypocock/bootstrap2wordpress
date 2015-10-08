@@ -19,10 +19,10 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
   <!-- Bootstrap core CSS -->
-  <link href="<?php bloginfo('stylesheet_directory') ?>/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
-  <link href="<?php bloginfo('stylesheet_directory') ?>/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
@@ -57,7 +57,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/"><img src="<?php bloginfo('stylesheet_directory') ?>/img/logo.png" alt="Bootstrap to Wordpress">
+              <a class="navbar-brand" href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Bootstrap to Wordpress">
             </div><!-- navbar-header -->
 
             <?php
