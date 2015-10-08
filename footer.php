@@ -11,18 +11,18 @@
 
 ?>
 
-	</div><!-- #content -->
+  <?php wp_footer(); ?>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bootstrap2wordpress' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'bootstrap2wordpress' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'bootstrap2wordpress' ), 'bootstrap2wordpress', '<a href="http://jimmypocock.com" rel="designer">Jimmy Pocock</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="<?php bloginfo('template_directory') ?>/js/jquery-2.1.1.min.js"></script>
+  <script src="<?php bloginfo('template_directory') ?>/js/bootstrap.min.js"></script>
+  <script src="<?php bloginfo('template_directory') ?>/js/main.js"></script>
 
-<?php wp_footer(); ?>
+  <script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </body>
 </html>
