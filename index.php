@@ -14,42 +14,55 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+  <section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">
+    <h1 class="page-title">Blog</h1>
+  </section>
 
-		<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+  <!-- BLOG CONTENT
+  ================================================== -->
+  <div class="container">
+    <div class="row" id="primary">
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+      <main id="content" class="col-sm-8" role="main">
 
-				<?php
+        <?php if ( have_posts() ) : ?>
 
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
-				?>
+          <?php /* Start the Loop */ ?>
+          <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php endwhile; ?>
+            <?php
 
-			<?php the_posts_navigation(); ?>
+              /*
+               * Include the Post-Format-specific template for the content.
+               * If you want to override this in a child theme, then include a file
+               * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+               */
+              get_template_part( 'template-parts/content', get_post_format() );
+            ?>
 
-		<?php else : ?>
+          <?php endwhile; ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+          <?php bootstrap2wordpress_paging_nav(); ?>
 
-		<?php endif; ?>
+        <?php else : ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+          <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-<?php get_sidebar(); ?>
+        <?php endif; ?>
+      </main><!-- #content -->
+
+
+      <!-- SIDEBAR
+      ================================================== -->
+      <aside class="col-sm-4">
+
+        <?php get_sidebar(); ?>
+
+
+      </aside>
+    </div><!-- #primary -->
+  </div><!-- .container -->
+
+
 <?php get_footer(); ?>
