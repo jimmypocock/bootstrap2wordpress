@@ -11,45 +11,46 @@
 
 ?>
 
-  <?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 
-  <!-- SIGN UP SECTION
-  ================================================== -->
-  <section id="signup" data-type="background" data-speed="4">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h2>Are you ready to take your coding skills to the <strong>next level</strong>?</h2>
-          <p><a href="" class="btn btn-lg btn-block btn-success">Yes, sign me up!</a></p>
+    <!-- SIGN UP SECTION
+    ================================================== -->
+    <section id="signup" data-type="background" data-speed="4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2>Are you ready to take your coding skills to the <strong>next level</strong>?</h2>
+            <p><a href="" class="btn btn-lg btn-block btn-success">Yes, sign me up!</a></p>
+          </div><!-- end col -->
+        </div><!-- row -->
+      </div><!-- container -->
+    </section><!-- signup -->
+
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer>
+      <div class="container">
+        <div class="col-sm-3">
+          <p><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Bootstrap to WordPress"></a></p>
         </div><!-- end col -->
-      </div><!-- row -->
-    </div><!-- container -->
-  </section><!-- signup -->
-
-
-  <!-- FOOTER
-  ================================================== -->
-  <footer>
-    <div class="container">
-      <div class="col-sm-3">
-        <p><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Bootstrap to WordPress"></a></p>
-      </div><!-- end col -->
-      <div class="col-sm-6">
-        <nav>
-          <ul class="list-unstyled list-inline">
-            <li><a href="">Home</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">Contact</a></li>
-            <li class="signup-link"><a href="">Sign up now</a></li>
-          </ul>
-        </nav>
-      </div><!-- end col -->
-      <div class="col-sm-3">
-        <p class="pull-right">&copy; 2014 Brad Hussey</p>
-      </div><!-- end col -->
-    </div><!-- container -->
-  </footer>
+        <div class="col-sm-6">
+          <nav>
+            <ul class="list-unstyled list-inline">
+              <li><a href="">Home</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Resources</a></li>
+              <li><a href="">Contact</a></li>
+              <li class="signup-link"><a href="">Sign up now</a></li>
+            </ul>
+          </nav>
+        </div><!-- end col -->
+        <div class="col-sm-3">
+          <p class="pull-right">&copy; 2014 Brad Hussey</p>
+        </div><!-- end col -->
+      </div><!-- container -->
+    </footer>
+  </div><!-- #page -->
 
 
   <!-- MODAL
