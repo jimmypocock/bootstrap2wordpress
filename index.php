@@ -15,7 +15,7 @@
 get_header(); ?>
 
   <section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">
-    <h1 class="page-title">Blog</h1>
+    <h1 class="page-title">Blog hello</h1>
   </section>
 
 
@@ -43,7 +43,7 @@ get_header(); ?>
 
           <?php endwhile; ?>
 
-          <?php bootstrap2wordpress_paging_nav(); ?>
+          <?#php bootstrap2wordpress_paging_nav(); ?>
 
         <?php else : ?>
 
@@ -55,12 +55,12 @@ get_header(); ?>
 
       <!-- SIDEBAR
       ================================================== -->
-      <aside class="col-sm-4">
+      <div class="col-sm-4">
 
         <?php get_sidebar(); ?>
 
 
-      </aside>
+      </div>
     </div><!-- #primary -->
   </div><!-- .container -->
 

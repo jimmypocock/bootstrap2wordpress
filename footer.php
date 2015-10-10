@@ -49,6 +49,7 @@
         </div><!-- end col -->
         <div class="col-sm-3">
           <p class="pull-right"><?php echo bloginfo('name') ?> &copy; <?php echo date('Y') ?> <?php the_author_link(); ?></p>
+          <?php dynamic_sidebar( 'sidebar-2' ); ?>
         </div><!-- end col -->
       </div><!-- container -->
     </footer>
